@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <p class="hero">Money won, is twice as sweet as money earned</p>
+        </nav>
+        <h1 id="message">Player 1 Turn</h1>
+        <div class="players">
+            <div id="player1">
+                <h1>Score: 
+                    <span id="player1Scoreboard">0</span>
+                </h1>
+                <div id="player1Dice" class="dice active">-</div>
+            </div>
+            <div id="player2">
+                <h1>Score: 
+                    <span id="player2Scoreboard">0</span>
+                </h1>
+                <div id="player2Dice" class="dice">-</div>
+            </div>
+        </div>
+
+        <button id="rollBtn">Roll Dice 🎲</button>
+        <button onClick="window.location.reload();" id="resetBtn">Reset Game 🔁</button>
+        <button id="goBigBtn">Go-BIG 💲💲</button>
+    </div>
+    <p class="copyright">&copy; 2022 OBUM-BIG</p>
+    <script src="myscript.js"></script>
+</body>
+</html>

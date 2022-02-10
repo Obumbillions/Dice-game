@@ -1,0 +1,116 @@
+html, body { 
+    --color-1: #a8e6cf;
+    --color-2: #dcedc1; 
+    --color-3: #ffd3b6; 
+    --color-4: #ffaaa5; 
+    --color-5: #ff8b94;
+    --color-6: #008C76FF;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    padding-top: 50px;
+    background-image: linear-gradient(135deg, var(--color-1) , var(--color-2));
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    color: black;
+    background-image: url("images/board\ game.jpg");
+    background-size: cover;
+}
+
+.container {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+    padding: 50px;
+}
+
+.players {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dice {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-3);
+    margin: 0 auto;
+    font-size: 80px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-weight: bolder;
+    font-style: italic;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left:50%;
+      width:50%
+    }
+  
+    to {
+      margin-left:0%;
+      width:50%;
+    }
+  }
+
+button {
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 20px;
+    margin: 40px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+button:focus,
+button:hover{
+   color: black;
+}
+
+#rollBtn {
+    background-color: var(--color-5);
+}
+
+#resetBtn {
+    background-color: var(--color-4);
+}
+#goBigBtn{
+    background-color: var( --color-6);
+
+}
+
+button:focus {
+    outline: none;
+}
+
+#resetBtn {
+    display: none;
+}
+
+.active {
+    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+}
+
+.copyright{
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color:white;
+}
