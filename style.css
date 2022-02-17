@@ -91,6 +91,7 @@ button:hover{
 #resetBtn {
     background-color: var(--color-4);
 }
+
 #goBigBtn{
     background-color: var( --color-6);
 
@@ -113,4 +114,19 @@ button:focus {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     color:white;
+}
+
+@media (max-width:765px){
+   html,body{
+       max-width:100%;
+        width: 500px;
+        margin:auto;
+}
+
+.container{
+    width:100%;
+    max-width: 50%;
+ 
+}
+
 }
